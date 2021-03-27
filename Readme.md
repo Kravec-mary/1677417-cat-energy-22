@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи»
 
 * Студент: [Мария Кравец](https://up.htmlacademy.ru/adaptive/22/user/1677417).
-* Наставник: `Неизвестно`.
+* Наставник: `Сергей Остаповец` (https://htmlacademy.ru/profile/seraphim).
 
 ---
 

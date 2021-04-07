@@ -3,8 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
+    <!-- <link href="css/style.css" rel="stylesheet"> -->
   </head>
   <body class="page__body">
+
     <header class="page-header">
       <a class="page-header__logo-image">
         <img src="img/cat-energy-logo.svg" width="174" height="52" alt="кэт энерджи">
@@ -14,13 +16,13 @@
         <div class="page-header__wrapper">
           <ul class="page-header__list">
             <li class="page-header___item">
-              <a class="page-header___link">Главная</a>
+              <a class="page-header___link" href="index.html">Главная</a>
             </li>
             <li class="page-header___item page-header___item--active">
               <a class="page-header__link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="page-header___item">
-              <a class="page-header__link" href="form.html">Подбор программы</a>
+              <a class="page-header__link">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -85,20 +87,16 @@
               <legend>Дополнительно</legend>
                    <ul class="more__list">
                      <li class="more__item">
-                       <input type="checkbox" id="sugar-substitute" name="sugar-substitute" checked>
-                       <label for="sugar-substitute">Сахарозаменитель</label>
+                       <label><input type="checkbox" name="sugar-substitute" checked>Сахарозаменитель</label>
                      </li>
                      <li class="more__item">
-                       <input type="checkbox" id="milk" name="milk">
-                       <label for="milk">Молоко</label>
+                       <label><input type="checkbox" name="milk">Молоко</label>
                      </li>
                      <li class="more__item">
-                       <input type="checkbox" id="water" name="water">
-                       <label for="water">Питьевая вода</label>
+                       <label><input type="checkbox" name="water">Питьевая вода</label>
                      </li>
                      <li class="more__item">
-                       <input type="checkbox" id="vitamins" name="vitamins">
-                       <label for="vitamins">Витамины</label>
+                       <label><input type="checkbox" name="vitamins">Витамины</label>
                      </li>
                    </ul>
                    <button class="button-base" type="button">Отправить заявку</button>

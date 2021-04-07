@@ -9,7 +9,7 @@
   text-align: center;
 }
 .example__subtitle {
-  font-family: Arial;
+  font-family: Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
@@ -22,7 +22,7 @@
   text-transform: uppercase;
 }
 .example__button {
-  font-family: "Oswald";
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 20px;
   color: $basic-black;

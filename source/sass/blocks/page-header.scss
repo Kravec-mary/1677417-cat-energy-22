@@ -1,5 +1,5 @@
 .page-header {
-  font-family: "Oswald";
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 500;
   text-transform: uppercase;
   font-size: 20px;
@@ -8,10 +8,9 @@
 .page-header__list {
   list-style: none;
   line-height: 20px;
-
 }
+
 .page-header__link {
   text-decoration: none;
   color: $basic-black;
 }
-

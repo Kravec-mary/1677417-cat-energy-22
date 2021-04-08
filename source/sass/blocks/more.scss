@@ -1,0 +1,24 @@
+.more {
+  border: 0;
+}
+.more__list {
+  list-style: none;
+  padding-left: 0;
+}
+.more__button {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  color: $basic-white;
+  background-color: $basic-green;
+  width: 280px;
+  height: 40px;
+  border: 0;
+  text-transform: uppercase;
+}
+.more__text {
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: none;
+}

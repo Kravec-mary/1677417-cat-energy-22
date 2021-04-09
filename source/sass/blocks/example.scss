@@ -2,25 +2,29 @@
   background-color: $grey;
   padding-top: 24px;
 }
+
 .example__title {
   font-weight: 400;
   font-size: 36px;
   color: $basic-black;
   text-align: center;
 }
+
 .example__subtitle {
-  font-family: Arial, sans-serif;
+  font-family: "Arial", sans-serif;
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
   color: $basic-dark-grey;
 }
+
 .example__text {
   font-size: 14px;
   line-height: 20px;
   color: $basic-black;
   text-transform: uppercase;
 }
+
 .example__button {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
@@ -28,5 +32,4 @@
   color: $basic-black;
   text-transform: uppercase;
   border: 0;
-
 }

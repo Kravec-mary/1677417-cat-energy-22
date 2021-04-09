@@ -1,0 +1,15 @@
+.button-base {
+  background-color: $basic-green;
+  width: 280px;
+  height: 40px;
+  text-align: center;
+}
+
+.link-base {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: $basic-white;
+}

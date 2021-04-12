@@ -1,9 +1,12 @@
+.contacts__section {
+  width: 320px;
+}
+
 .contacts__text {
   font-family: "Oswald", "Arial", sans-serif;
   color: $special-black;
   text-transform: uppercase;
 }
-
 .contacts__address {
   font-family: "Arial", sans-serif;
   font-size: 14px;

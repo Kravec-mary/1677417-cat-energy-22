@@ -1,6 +1,19 @@
+.page-footer__contacts {
+  display: flex;
+  flex-direction: column;
+}
+
 .page-footer__container {
   background-color: $basic-grey;
   padding-top: 30px;
+  display: grid;
+  grid-auto-flow: row;
+  @media
+  (min-width: $tablet-width),
+  (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
 
 .page-footer__partner {

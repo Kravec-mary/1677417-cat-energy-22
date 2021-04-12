@@ -3,6 +3,11 @@
   padding-top: 24px;
 }
 
+.example__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
 .example__title {
   font-weight: 400;
   font-size: 36px;
@@ -16,9 +21,18 @@
   line-height: 18px;
   font-weight: 400;
   color: $basic-dark-grey;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 436px;
+  }
 }
 
-.example__text {
+.example__desc {
   font-size: 14px;
   line-height: 20px;
   color: $basic-black;
@@ -32,4 +46,16 @@
   color: $basic-black;
   text-transform: uppercase;
   border: 0;
+}
+
+.example__before-after-button {
+  width: 228px;
+
+  @media (min-width: $tablet-width) {
+    width: 586px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 586px;
+  }
 }

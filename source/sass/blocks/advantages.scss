@@ -8,6 +8,21 @@
 
 .advantages__list {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .advantages__item {
@@ -15,4 +30,13 @@
   font-size: 14px;
   line-height: 18px;
   color: $basic-dark-grey;
+  width: 279px;
+
+  @media (min-width: $tablet-width) {
+    width: 240px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 240px;
+  }
 }

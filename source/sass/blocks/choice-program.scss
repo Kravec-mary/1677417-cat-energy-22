@@ -5,6 +5,8 @@
   background-color: $basic-green;
   text-align: center;
   color: $basic-white;
+  display: flex;
+  flex-direction: column;
 }
 
 .choice-program__title {
@@ -12,6 +14,7 @@
   line-height: 36px;
   font-weight: 400;
   text-align: center;
+  width: 249px;
 }
 
 .choice-program__text {
@@ -19,6 +22,7 @@
   line-height: 14px;
   font-weight: 400;
   text-transform: uppercase;
+  width: 198px;
 }
 
 .choice-program__button {
@@ -29,13 +33,40 @@
   text-transform: uppercase;
 }
 
+.choice-program__image {
+  @media (min-width: $tablet-width) {
+    order: 4;
+  }
+
+  @media (min-width: $desktop-width) {
+    order: 4;
+  }
+}
+
 .choice-program__list {
   list-style: none;
   padding-left: 0;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .choice-program__item {
   background-color: $basic-grey;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
 }
 
 .choice-program__subtitle {

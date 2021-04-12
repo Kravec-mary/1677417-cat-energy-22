@@ -32,14 +32,17 @@
   color: $basic-white;
   text-transform: uppercase;
 }
+
 .choice-program__image {
   @media (min-width: $tablet-width) {
     order: 4;
   }
+
   @media (min-width: $desktop-width) {
     order: 4;
   }
 }
+
 .choice-program__list {
   list-style: none;
   padding-left: 0;

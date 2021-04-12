@@ -1,13 +1,11 @@
 .example {
   background-color: $grey;
   padding-top: 24px;
-  //display: flex;
-  //flex-direction: column;
 }
+
 .example__wrapper {
   display: flex;
   flex-direction: column;
-
 }
 
 .example__title {
@@ -34,7 +32,7 @@
   }
 }
 
-.example__text {
+.example__desc {
   font-size: 14px;
   line-height: 20px;
   color: $basic-black;
@@ -49,6 +47,7 @@
   text-transform: uppercase;
   border: 0;
 }
+
 .example__before-after-button {
   width: 228px;
 

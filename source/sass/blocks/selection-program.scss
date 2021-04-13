@@ -5,6 +5,8 @@
   font-weight: 400;
   text-transform: uppercase;
   color: $basic-black;
+  display: flex;
+  flex-direction: column;
 }
 
 .selection-program__title {
@@ -17,4 +19,14 @@
 .selection-program__subtitle {
   font-size: 14px;
   line-height: 18px;
+}
+
+.selection-program__container {
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+  }
 }

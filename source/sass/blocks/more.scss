@@ -2,9 +2,36 @@
   border: 0;
 }
 
+.more__title {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 26px;
+  text-transform: none;
+}
+
 .more__list {
   list-style: none;
   padding-left: 0;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    height: 174px;
+  }
+}
+
+.more__item {
+  width: 280px;
+
+  @media (min-width: $desktop-width) {
+    width: 221px;
+  }
 }
 
 .more__button {
@@ -17,6 +44,16 @@
   height: 40px;
   border: 0;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    width: 282px;
+    height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 568px;
+    height: 54px;
+  }
 }
 
 .more__text {
@@ -24,4 +61,20 @@
   font-size: 14px;
   line-height: 16px;
   text-transform: none;
+}
+
+.more__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+  }
 }

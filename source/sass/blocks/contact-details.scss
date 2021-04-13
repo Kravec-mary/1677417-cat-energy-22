@@ -13,4 +13,24 @@
   list-style: none;
   padding-left: 0;
   color: $basic-dark-grey;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.contact-details__input {
+  width: 210px;
+
+  @media (min-width: $tablet-width) {
+    width: 530px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 470px;
+  }
 }

@@ -1,8 +1,17 @@
 .choice-radio {
   color: $special-dark-grey;
   border: 0;
+  width: 280px;
   border-top: 1px solid $tangle-color;
   border-bottom: 1px solid $tangle-color;
+
+  @media (min-width: $tablet-width) {
+    width: 630px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 569px;
+  }
 }
 
 .choice-radio__list {

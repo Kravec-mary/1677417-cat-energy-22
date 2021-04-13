@@ -1,5 +1,7 @@
 .comment {
   border: 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .comment__title {
@@ -9,4 +11,14 @@
 .comment__textarea {
   width: 280px;
   height: 150px;
+
+  @media (min-width: $tablet-width) {
+    width: 631px;
+    height: 174px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    height: 174px;
+  }
 }

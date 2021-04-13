@@ -1,6 +1,15 @@
 .questionary {
   color: $basic-dark-grey;
   border: 0;
+  width: 280px;
+
+  @media (min-width: $tablet-width) {
+    width: 630px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 569px;
+  }
 }
 
 .questionary__list {

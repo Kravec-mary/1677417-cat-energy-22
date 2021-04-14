@@ -4,11 +4,35 @@
   font-size: 16px;
   line-height: 16px;
   color: $special-dark-grey;
+  padding-left: 20px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 282px;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+    padding-right: 30px;
+    width: 708px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 110px;
+    padding-right: 110px;
+    width: 896px;
+  }
 }
 
 .additional__list {
   border-top: 1px solid $tangle-color-2;
-  //padding-top: 13px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-direction: row;
+  }
 }
 
 .additional__term {
@@ -26,4 +50,18 @@
   font-size: 14px;
   line-height: 14px;
   color: $basic-dark-grey;
+}
+
+.additional__definition-container {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+}
+
+.additional__container {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    width: 896px;
+  }
 }

@@ -9,5 +9,10 @@
   background-image: url("../img/gift-cat.png");
   background-size: 280px 289px;
   background-repeat: no-repeat;
-  //margin-top: 39px;
+  display: flex;
+  flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
 }

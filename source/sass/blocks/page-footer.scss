@@ -1,3 +1,6 @@
+// .page-footer {
+//   padding: 0 20px;
+// }
 .page-footer__contacts {
   display: flex;
   flex-direction: column;
@@ -22,9 +25,38 @@
   }
 }
 
+.page-footer__map {
+  @media (min-width: $desktop-width) {
+    position: relative;
+  }
+}
+
+.page-footer__map img {
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 400px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    height: 400px;
+  }
+}
+
+.page-footer__logo {
+  text-align: center;
+}
+
 .page-footer__partner {
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
   color: $basic-dark-grey;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (min-width: $desktop-width) {
+    justify-content: space-evenly;
+  }
 }

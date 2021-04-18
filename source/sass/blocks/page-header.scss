@@ -25,30 +25,79 @@
     display: none;
   }
 }
+/* Кнопка закрытия */
+.page-header__toggle--closed {
+  content: "";
+  position: absolute;
+  top: 8%;
+  left: 87%;
+  width: 24px;
+  height: 2px;
+  border: none;
+  background-color: $basic-black;
+  box-shadow: 0 8px 0 0 $basic-black, 0 16px 0 0 $basic-black;
+}
+
+/* Кнопка открытия */
+/*
+.page-header__toggle--opened {
+  position: absolute;
+  right: 11px;
+  bottom: 248px;
+  z-index: 2;
+  display: block;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border: none;
+  background-color: $basic-white;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    left: 3px;
+    width: 25px;
+    height: 1.5px;
+    background-color: $basic-black;
+  }
+  &::before {
+    transform: rotate(45deg);
+  }
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+*/
 
 @media (min-width: $tablet-width) {
   .page-header {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 3fr;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
-    display: grid;
     grid-template-columns: 1fr 1fr;
+    padding-top: 50px;
   }
 }
 
 .page-header__logo-image {
   text-decoration: none;
 
-  @media (min-width: $tablet-width) {
-    width: 174px;
-  }
-
   @media (min-width: $desktop-width) {
-    width: 202px;
+    text-align: left;
   }
 }
 
@@ -57,7 +106,10 @@
   line-height: 20px;
 
   @media (min-width: $tablet-width) {
-    width: 440px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    line-height: 20px;
   }
 
   @media (min-width: $desktop-width) {
@@ -68,4 +120,17 @@
 .page-header__link {
   text-decoration: none;
   color: $basic-black;
+  position: relative;
+  display: block;
+  padding-bottom: 15px;
+}
+
+.page-header__link--active {
+  @media (min-width: $tablet-width) {
+    border-bottom: 2px solid $basic-green;
+  }
+
+  @media (min-width: $desktop-width) {
+    border-bottom: 2px solid $basic-white;
+  }
 }

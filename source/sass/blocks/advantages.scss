@@ -1,5 +1,6 @@
 .advantages {
-  padding: 0 20px;
+  padding-left: 20px;
+  padding-right: 20px;
 
   @media (min-width: $tablet-width) {
     padding-left: 30px;
@@ -7,7 +8,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0 107px;
+    padding: 0 110px;
   }
 }
 
@@ -16,23 +17,26 @@
   font-size: 36px;
   line-height: 40px;
   font-weight: normal;
-  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .advantages__list {
   list-style: none;
   display: flex;
   flex-direction: column;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
@@ -44,12 +48,44 @@
   line-height: 18px;
   color: $basic-dark-grey;
   width: 279px;
+  background-repeat: no-repeat;
+  background-position: 0 10px;
 
   @media (min-width: $tablet-width) {
-    width: 240px;
+    width: 279px;
+    font-size: 16px;
+    line-height: 24px;
+    color: $basic-dark-grey;
+    font-weight: 400;
+    background-size: 80px 80px;
   }
 
   @media (min-width: $desktop-width) {
     width: 240px;
+  }
+}
+
+.advantages__item:nth-child(1) {
+  background-image: url("../img/group-1.svg");
+}
+
+.advantages__item:nth-child(2) {
+  background-image: url("../img/group-2.svg");
+}
+
+.advantages__item:nth-child(3) {
+  background-image: url("../img/group-3.svg");
+}
+
+.advantages__item:nth-child(4) {
+  background-image: url("../img/group-4.svg");
+}
+
+.advantages__item p {
+  margin-left: 80px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 120px;
+    margin-left: 0;
   }
 }

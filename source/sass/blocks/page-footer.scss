@@ -31,11 +31,12 @@
   }
 }
 
-.page-footer__map  img{
+.page-footer__map img {
+  position: relative;
+
   @media (min-width: $tablet-width) {
     width: 768px;
     height: 400px;
-    position: relative;
   }
 
   @media (min-width: $desktop-width) {
@@ -43,14 +44,18 @@
     height: 400px;
   }
 }
+
 .page-footer__location {
   position: absolute;
-  top: 625%;
+  left: 3%;
 
   @media (min-width: $tablet-width) {
+
     width: 768px;
     height: 400px;
-    top: 872%;
+    // top: 411.5%;
+    top: 189%;
+    left: 0%;
   }
 
   @media (min-width: $desktop-width) {

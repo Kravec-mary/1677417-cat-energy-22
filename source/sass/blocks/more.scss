@@ -1,5 +1,6 @@
 .more {
   border: 0;
+  padding: 0;
 }
 
 .more__title {
@@ -7,17 +8,20 @@
   font-size: 24px;
   line-height: 26px;
   text-transform: none;
+  padding-bottom: 30px;
 }
 
 .more__list {
   list-style: none;
-  padding-left: 0;
+  padding-left: 60px;
   display: flex;
   flex-direction: column;
 
+
   @media (min-width: $tablet-width) {
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 21px 13px;
   }
 
   @media (min-width: $desktop-width) {
@@ -28,6 +32,12 @@
 
 .more__item {
   width: 280px;
+  padding-bottom: 25px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 
   @media (min-width: $desktop-width) {
     width: 221px;
@@ -61,6 +71,8 @@
   font-size: 14px;
   line-height: 16px;
   text-transform: none;
+  text-align: center;
+  padding-top: 20px;
 }
 
 .more__container {
@@ -76,5 +88,41 @@
   @media (min-width: $desktop-width) {
     display: flex;
     flex-direction: row;
+  }
+}
+
+.more__item label {
+  position: relative;
+  display: block;
+}
+
+.more__checkbox + label::before {
+  content: "";
+  position: absolute;
+  left: -58px;
+  top: -6px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid $tangle-color-2;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.more__checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+  left: -51px;
+  top: 2px;
+  width: 18px;
+  height: 14px;
+  background-image: url("../img/vector.svg");
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    left: -47px;
+    top: 7px;
   }
 }

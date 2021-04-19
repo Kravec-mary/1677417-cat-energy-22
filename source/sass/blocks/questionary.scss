@@ -2,6 +2,7 @@
   color: $basic-dark-grey;
   border: 0;
   width: 280px;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     width: 630px;
@@ -15,4 +16,62 @@
 .questionary__list {
   list-style: none;
   padding-left: 0;
+}
+
+.questionary__item {
+  padding-bottom: 10px;
+}
+
+.questionary__item label {
+  padding-right: 5px;
+}
+
+.questionary__item input {
+  height: 44px;
+  padding: 0;
+  border: 1px solid $grey-input;
+
+  @media (min-width: $tablet-width) {
+    height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    height: 52px;
+  }
+}
+
+.questionary__item:nth-child(1) input {
+  width: 227px;
+
+  @media (min-width: $tablet-width) {
+    width: 567px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 506px;
+  }
+}
+
+.questionary__item:nth-child(2) input {
+  width: 204px;
+
+  @media (min-width: $tablet-width) {
+    width: 536px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 475px;
+  }
+}
+
+.questionary__item:nth-child(3) input {
+  width: 172px;
+
+  @media (min-width: $tablet-width) {
+    width: 497px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 436px;
+  }
 }

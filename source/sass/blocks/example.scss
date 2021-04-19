@@ -1,6 +1,13 @@
 .example {
   background-color: $grey;
   padding-top: 24px;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  @media (min-width: $desktop-width) {
+    position: relative;
+    padding: 0 110px;
+  }
 }
 
 .example__wrapper {
@@ -12,7 +19,11 @@
   font-weight: 400;
   font-size: 36px;
   color: $basic-black;
-  text-align: center;
+
+  @media (min-width: $desktop-width) {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
 
 .example__subtitle {
@@ -29,7 +40,44 @@
 
   @media (min-width: $desktop-width) {
     width: 436px;
+    font-size: 16px;
+    line-height: 24px;
   }
+}
+
+.example__list {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  padding-left: 0;
+
+  @media (min-width: $tablet-width) {
+    justify-content: left;
+  }
+}
+
+.example__item {
+  background-image: url("../img/grey-something.svg");
+  background-repeat: no-repeat;
+  width: 140px;
+  padding-top: 7px;
+}
+
+.example__item p {
+  font-family: "Arial", sans-serif;
+  color: $special-dark-grey;
+  width: 80px;
+  text-align: center;
+  padding-left: 24px;
+}
+
+.example__text {
+  font-family: "Oswald", "Arial", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 24px;
+  text-align: center;
+  padding-left: 31px;
 }
 
 .example__desc {
@@ -37,6 +85,35 @@
   line-height: 20px;
   color: $basic-black;
   text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 40px;
+
+  @media (min-width: $tablet-width) {
+    width: 130px;
+    text-align: right;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 436px;
+    text-align: left;
+  }
+}
+
+.example__container {
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    padding-top: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.example__image {
+  text-align: center;
 }
 
 .example__button {
@@ -50,6 +127,9 @@
 
 .example__before-after-button {
   width: 228px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
   @media (min-width: $tablet-width) {
     width: 586px;
@@ -57,5 +137,13 @@
 
   @media (min-width: $desktop-width) {
     width: 586px;
+  }
+}
+
+.example__box {
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    left: 58%;
+    bottom: 10%;
   }
 }

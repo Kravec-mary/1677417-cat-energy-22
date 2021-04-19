@@ -31,15 +31,32 @@
   }
 }
 
-.page-footer__map img {
+.page-footer__map  img{
   @media (min-width: $tablet-width) {
     width: 768px;
     height: 400px;
+    position: relative;
   }
 
   @media (min-width: $desktop-width) {
     width: 1440px;
     height: 400px;
+  }
+}
+.page-footer__location {
+  position: absolute;
+  top: 625%;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+    height: 400px;
+    top: 872%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1440px;
+    height: 400px;
+    top: 0%;
   }
 }
 

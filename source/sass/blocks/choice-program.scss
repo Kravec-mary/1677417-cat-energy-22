@@ -1,24 +1,24 @@
 .choice-program__container {
+
   @media (max-width: $mobile-width-only) {
-    background-image: url("../img/background-cat.jpg");
+    //background: linear-gradient($basic-green 10%, transparent 100%), url("../img/background-cat.jpg") no-repeat;
+    background: url("../img/background-cat.jpg"), rgba(104, 183, 56, 0.85);
     background-repeat: no-repeat;
-    // background-color: $basic-green;
     background-size: 320px 302px;
   }
 
   @media (min-width: $desktop-width) {
-    background-image: url("../img/background-cat-2.png");
-    background-repeat: no-repeat;
-    // background-color: $basic-green;
+    background: url("../img/background-cat.jpg"), rgba(104, 183, 56, 0.85);
     background-position: 100% 26%;
-    padding-left: 180px;
+    background-repeat: no-repeat;
+    background-size: 720px 694px;
+    // padding-left: 180px;
   }
-
-  text-align: center;
-  color: $basic-white;
-  display: flex;
-  flex-direction: column;
-}
+    text-align: center;
+    color: $basic-white;
+    display: flex;
+    flex-direction: column;
+  }
 
 .choice-program__title {
   font-size: 36px;

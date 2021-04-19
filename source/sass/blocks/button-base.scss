@@ -7,14 +7,22 @@
 
 .link-base {
   background-color: $basic-green;
-
-  height: 40px;
+  font-size: 20px;
+  line-height: 20px;
   text-align: center;
   font-family: "Oswald", "Arial", sans-serif;
-  font-size: 16px;
-  line-height: 20px;
+  width: 244px;
+  height: 40px;
+  padding-top: 14px;
   text-transform: uppercase;
   text-decoration: none;
   color: $basic-white;
-  width: 264px;
+
+  @media (max-width: $mobile-width-only) {
+    font-size: 14px;
+    line-height: 18px;
+    width: 264px;
+    height: 30px;
+    padding-top: 10px;
+  }
 }

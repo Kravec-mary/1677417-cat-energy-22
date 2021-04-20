@@ -1,4 +1,8 @@
 .choice-program__container {
+  text-align: center;
+  color: $basic-white;
+  display: flex;
+  flex-direction: column;
 
   @media (max-width: $mobile-width-only) {
     //background: linear-gradient($basic-green 10%, transparent 100%), url("../img/background-cat.jpg") no-repeat;
@@ -12,13 +16,8 @@
     background-position: 100% 26%;
     background-repeat: no-repeat;
     background-size: 720px 694px;
-    // padding-left: 180px;
   }
-    text-align: center;
-    color: $basic-white;
-    display: flex;
-    flex-direction: column;
-  }
+}
 
 .choice-program__title {
   font-size: 36px;

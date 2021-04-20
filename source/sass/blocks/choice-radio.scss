@@ -4,6 +4,7 @@
   width: 280px;
   border-top: 1px solid $tangle-color;
   border-bottom: 1px solid $tangle-color;
+  padding: 0;
 
   @media (min-width: $tablet-width) {
     width: 630px;
@@ -17,4 +18,50 @@
 .choice-radio__list {
   list-style: none;
   padding-left: 0;
+}
+
+.choice-radio__item {
+  padding-bottom: 25px;
+  padding-left: 60px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.choice-radio__item label {
+  position: relative;
+  display: block;
+}
+
+.choice-radio__input + label::before {
+  content: "";
+  position: absolute;
+  left: -59px;
+  top: -8px;
+  width: 30px;
+  height: 30px;
+  border: 2px solid $tangle-color-2;
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+.choice-radio__input:checked + label::after {
+  content: "";
+  position: absolute;
+  left: -48px;
+  top: 2px;
+  width: 13px;
+  height: 13px;
+  background-color: $basic-green;
+  border-radius: 50%;
+
+  @media (min-width: $tablet-width) {
+    width: 18px;
+    height: 18px;
+    left: -46px;
+    top: 4px;
+  }
 }

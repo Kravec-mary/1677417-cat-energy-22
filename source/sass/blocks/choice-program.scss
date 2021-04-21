@@ -58,22 +58,6 @@
   }
 }
 
-.choice-program__button {
-  text-decoration: none;
-  font-size: 14px;
-  line-height: 18px;
-  color: $basic-white;
-  text-transform: uppercase;
-  width: 244px;
-  margin-left: 20px;
-
-  @media (min-width: $tablet-width) {
-    margin-left: 60px;
-    padding-top: 5px;
-    margin-top: 50px;
-  }
-}
-
 .choice-program__image {
   @media (min-width: $tablet-width) {
     order: 4;

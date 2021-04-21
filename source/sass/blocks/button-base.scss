@@ -1,24 +1,15 @@
 .button-base {
-  font-size: 20px;
-  line-height: 20px;
+  font-size: 14px;
+  line-height: 18px;
   text-align: center;
   font-family: "Oswald", "Arial", sans-serif;
-  width: 244px;
-  height: 40px;
+  width: 280px;
+  height: 29px;
   background-color: $basic-green;
-  padding-top: 14px;
+  padding-top: 13px;
   text-transform: uppercase;
   color: $basic-white;
-  margin-left: 20px;
   text-decoration: none;
-
-  @media (max-width: $mobile-width-only) {
-    font-size: 14px;
-    line-height: 18px;
-    width: 264px;
-    height: 30px;
-    padding-top: 10px;
-  }
 }
 
 // .link-base {

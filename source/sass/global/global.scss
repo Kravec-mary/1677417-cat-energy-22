@@ -17,3 +17,9 @@ sup {
   vertical-align: baseline;
   font-size: inherit;
 }
+
+.test {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}

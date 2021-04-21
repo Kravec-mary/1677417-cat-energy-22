@@ -43,18 +43,13 @@
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 60px 70px;
+    grid-gap: 60px 50px;
   }
 }
 
 .catalog__item {
   display: flex;
   flex-direction: column;
-
-  @media (max-width: $mobile-width-only) {
-    display: flex;
-    flex-direction: row;
-  }
 }
 
 .catalog__desc {
@@ -117,6 +112,7 @@
 
 .catalog__button {
   text-align: center;
+
 }
 
 .catalog__link {

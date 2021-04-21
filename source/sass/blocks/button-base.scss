@@ -1,28 +1,35 @@
-// .button-base {
-//   background-color: $basic-green;
-//   width: 280px;
-//   height: 40px;
-//   text-align: center;
-// }
-
-.link-base {
-  background-color: $basic-green;
-  font-size: 20px;
-  line-height: 20px;
+.button-base {
+  font-size: 14px;
+  line-height: 18px;
   text-align: center;
   font-family: "Oswald", "Arial", sans-serif;
-  width: 244px;
-  height: 40px;
-  padding-top: 14px;
+  width: 280px;
+  height: 29px;
+  background-color: $basic-green;
+  padding-top: 13px;
   text-transform: uppercase;
-  text-decoration: none;
   color: $basic-white;
-
-  @media (max-width: $mobile-width-only) {
-    font-size: 14px;
-    line-height: 18px;
-    width: 264px;
-    height: 30px;
-    padding-top: 10px;
-  }
+  text-decoration: none;
 }
+
+// .link-base {
+//   background-color: $basic-green;
+//   font-size: 20px;
+//   line-height: 20px;
+//   text-align: center;
+//   font-family: "Oswald", "Arial", sans-serif;
+//   width: 244px;
+//   height: 40px;
+//   // padding-top: 14px;
+//   text-transform: uppercase;
+//   text-decoration: none;
+//   color: $basic-white;
+
+//   @media (max-width: $mobile-width-only) {
+//     font-size: 14px;
+//     line-height: 18px;
+//     width: 264px;
+//     height: 30px;
+//     padding-top: 10px;
+//   }
+// }

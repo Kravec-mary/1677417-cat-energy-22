@@ -143,7 +143,7 @@
 .example__box {
   @media (min-width: $desktop-width) {
     position: absolute;
-    left: 58%;
+    right: 0;
     bottom: 0%;
   }
 }

@@ -49,9 +49,13 @@
 
 .contact-details__item:nth-child(1) input {
   width: 214px;
+  background: url("../img/icon-email-mobile.svg") no-repeat;
+  background-position: 97% 46%;
 
   @media (min-width: $tablet-width) {
     width: 551px;
+    background: url("../img/icon-email-tablet.svg") no-repeat;
+    background-position: 97% 46%;
   }
 
   @media (min-width: $desktop-width) {
@@ -61,9 +65,13 @@
 
 .contact-details__item:nth-child(2) input {
   width: 197px;
+  background: url("../img/icon-phone-mobile.svg") no-repeat;
+  background-position: 97% 46%;
 
   @media (min-width: $tablet-width) {
     width: 535px;
+    background: url("../img/icon-phone-tablet.svg") no-repeat;
+    background-position: 97% 46%;
   }
 
   @media (min-width: $desktop-width) {

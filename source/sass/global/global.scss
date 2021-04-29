@@ -24,16 +24,16 @@ sup {
   }
 }
 
-.logo-delete {
-  @media (min-width: $tablet-width) {
-    display: none;
-  }
-}
-
 textarea,
 input::placeholder {
   text-transform: uppercase;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
+}
+
+.logo-delete {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }

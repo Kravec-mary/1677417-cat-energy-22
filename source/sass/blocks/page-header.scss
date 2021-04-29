@@ -95,10 +95,11 @@
 
 .page-header__logo-image {
   text-decoration: none;
-
-  @media (min-width: $desktop-width) {
-    text-align: left;
-  }
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: baseline;
+  padding-right: 45px;
 }
 
 .page-header__list {
@@ -133,4 +134,8 @@
   @media (min-width: $desktop-width) {
     border-bottom: 2px solid $basic-white;
   }
+}
+
+.page-header__logo {
+  text-align: left;
 }

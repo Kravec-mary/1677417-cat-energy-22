@@ -9,3 +9,16 @@
 .social__item {
   margin-right: 20px;
 }
+
+.social__icon {
+  fill: $special-grey-dark;
+}
+
+.social__icon:hover {
+  fill: $basic-green;
+}
+
+.social__icon:active {
+  opacity: 0.3;
+  fill: $basic-green;
+}

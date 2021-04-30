@@ -53,3 +53,25 @@
     justify-content: space-evenly;
   }
 }
+
+.page-footer__partner:active {
+  color: $basic-dark-grey;
+  opacity: 0.3;
+}
+
+.page-footer__partner-logo {
+  fill: $special-grey-dark;
+}
+
+.page-footer__partner-logo:hover {
+  fill: $basic-green;
+}
+
+.page-footer__partner-logo:active {
+  fill: $basic-green;
+  opacity: 0.3;
+}
+
+.page-footer__link {
+  text-decoration: none;
+}

@@ -102,6 +102,14 @@
   padding-right: 45px;
 }
 
+.page-header__logotype:hover {
+  opacity: 0.8;
+}
+
+.page-header__logotype:active {
+  opacity: 0.6;
+}
+
 .page-header__list {
   list-style: none;
   line-height: 20px;

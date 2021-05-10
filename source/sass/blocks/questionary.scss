@@ -6,10 +6,12 @@
 
   @media (min-width: $tablet-width) {
     width: 630px;
+    margin-top: 21px;
   }
 
   @media (min-width: $desktop-width) {
     width: 569px;
+    margin-top: 21px;
   }
 }
 
@@ -19,11 +21,21 @@
 }
 
 .questionary__item {
-  padding-bottom: 10px;
+  padding-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-bottom: 18px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-bottom: 20px;
+  }
 }
 
 .questionary__item label {
-  padding-right: 5px;
+  padding-right: 8px;
 }
 
 .questionary__item input {
@@ -36,42 +48,49 @@
   }
 
   @media (min-width: $desktop-width) {
-    height: 52px;
+    height: 50px;
   }
 }
 
 .questionary__item:nth-child(1) input {
-  width: 227px;
+  width: 213px;
+  padding-left: 13px;
 
   @media (min-width: $tablet-width) {
-    width: 567px;
+    width: 544px;
+    padding-left: 19px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 506px;
+    width: 484px;
+    padding-left: 21px;
   }
 }
 
 .questionary__item:nth-child(2) input {
-  width: 204px;
+  width: 187px;
+  padding-left: 17px;
 
   @media (min-width: $tablet-width) {
-    width: 536px;
+    width: 514px;
+    padding-left: 23px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 475px;
+    width: 453px;
   }
 }
 
 .questionary__item:nth-child(3) input {
-  width: 172px;
+  width: 155px;
+  padding-left: 16px;
 
   @media (min-width: $tablet-width) {
-    width: 497px;
+    width: 475px;
+    padding-left: 22px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 436px;
+    width: 414px;
   }
 }

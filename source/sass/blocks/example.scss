@@ -1,28 +1,44 @@
 .example {
   background-color: $grey;
-  padding-top: 24px;
-  padding-left: 20px;
+  padding-top: 7px;
+  // padding-left: 20px;
   padding-right: 20px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 0;
+    background-color: $basic-white;
+  }
 
   @media (min-width: $desktop-width) {
     position: relative;
-    padding: 20px 110px;
+    // padding: 9px 81px;
+    padding-right: 81px;
+    padding-left: 81px;
+    padding-top: 9px;
+    padding-bottom: 69px;
   }
 }
 
 .example__wrapper {
   display: flex;
   flex-direction: column;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 30px;
+  }
 }
 
 .example__title {
   font-weight: 400;
   font-size: 36px;
   color: $basic-black;
+  padding-left: 20px;
 
-  @media (min-width: $desktop-width) {
+  @media (min-width: $tablet-width) {
     font-size: 60px;
     line-height: 60px;
+    margin-top: 44px;
+    padding-left: 0;
   }
 }
 
@@ -33,15 +49,20 @@
   font-weight: 400;
   color: $basic-dark-grey;
   width: 280px;
+  padding-left: 20px;
 
   @media (min-width: $tablet-width) {
-    width: 708px;
+    width: 700px;
+    padding-left: 0;
+    font-size: 16px;
+    line-height: 24px;
+    margin-top: 14px;
   }
 
   @media (min-width: $desktop-width) {
     width: 436px;
-    font-size: 16px;
-    line-height: 24px;
+    padding-top: 81px;
+    padding-bottom: 16px;
   }
 }
 
@@ -49,7 +70,9 @@
   list-style: none;
   display: flex;
   justify-content: space-around;
-  padding-left: 0;
+  padding-right: 12px;
+  margin-bottom: 0;
+  padding-left: 20px;
 
   @media (min-width: $tablet-width) {
     justify-content: left;
@@ -57,18 +80,83 @@
 }
 
 .example__item {
+  width: 113px;
+  padding: 9px 1px;
+
+  @media (min-width: $tablet-width) {
+    width: 175px;
+    padding-top: 22px;
+  }
+}
+
+.example__item::before {
+  content: "";
+  position: absolute;
+  left: 6%;
+  top: 9%;
+  width: 130px;
+  height: 100px;
+  background: url("../img/grey-something.svg");
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    width: 165px;
+    left: 0%;
+    top: 28%;
+    background-size: 162px 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 0%;
+    top: 19%;
+  }
+}
+
+.example__item::after {
+  content: "";
+  position: absolute;
+  left: 58%;
+  top: 9%;
+  width: 130px;
+  height: 100px;
   background-image: url("../img/grey-something.svg");
   background-repeat: no-repeat;
-  width: 140px;
-  padding-top: 7px;
+
+  @media (min-width: $tablet-width) {
+    background-image: url("../img/grey-something-tablet.svg");
+    width: 165px;
+    left: 28%;
+    top: 28%;
+    background-size: 162px 72px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 16%;
+    top: 19%;
+  }
 }
 
 .example__item p {
   font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 12px;
   color: $special-dark-grey;
   width: 80px;
   text-align: center;
-  padding-left: 24px;
+  margin-top: 7px;
+  padding-left: 32px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 14px;
+    line-height: 14px;
+    width: 131px;
+    padding-left: 21px;
+    padding-top: 5px;
+  }
+}
+
+.example__item:nth-child(1) p {
+  margin-left: -27px;
 }
 
 .example__text {
@@ -78,28 +166,44 @@
   line-height: 24px;
   text-align: center;
   padding-left: 31px;
+  text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    font-size: 30px;
+    line-height: 37px;
+    padding-left: 37px;
+  }
 }
 
 .example__desc {
   font-size: 14px;
   line-height: 20px;
+  font-weight: 400;
   color: $basic-black;
   text-transform: uppercase;
   text-align: center;
-  padding-bottom: 40px;
+  padding-left: 65px;
 
   @media (min-width: $tablet-width) {
-    width: 130px;
+    width: 176px;
     text-align: right;
+    font-size: 20px;
+    line-height: 29px;
+    padding-top: 30px;
+    padding-right: 12px;
   }
 
   @media (min-width: $desktop-width) {
     width: 436px;
     text-align: left;
+    padding-top: 28px;
+    padding-left: 0;
   }
 }
 
 .example__container {
+  position: relative;
+
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 3fr 1fr;
@@ -115,6 +219,18 @@
 .example__image {
   text-align: center;
 }
+// .example__image::before {
+//   @media (min-width: $tablet-width) {
+//     content: "";
+//     position: absolute;
+//     width: 50px;
+//     height: 50px;
+//     color: red;
+//     top: 10px;
+//     left: 19px;
+//   }
+
+// }
 
 .example__button {
   font-family: "Oswald", "Arial", sans-serif;
@@ -123,27 +239,109 @@
   color: $basic-black;
   text-transform: uppercase;
   border: 0;
+  background-color: $grey;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 5px;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.3);
+  }
 }
 
 .example__before-after-button {
-  width: 228px;
+  position: relative;
+  width: 320px;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  gap: 53px;
+  justify-content: center;
+  padding-top: 29px;
+  padding-bottom: 37px;
 
   @media (min-width: $tablet-width) {
+    justify-content: space-between;
     width: 586px;
+    position: absolute;
+    top: 85%;
+    left: 8%;
   }
 
   @media (min-width: $desktop-width) {
     width: 586px;
+    padding: 1px 14px;
   }
 }
 
 .example__box {
+  padding-top: 41px;
+
+  @media (min-width: $tablet-width) {
+    padding-top: 35px;
+    position: relative;
+  }
+
   @media (min-width: $desktop-width) {
     position: absolute;
-    right: 0;
+    right: 71px;
     bottom: 0%;
   }
+}
+
+.example__toggle::before {
+  @media (max-width: $mobile-width-only) {
+    content: "";
+    position: absolute;
+    width: 84px;
+    height: 14px;
+    background-image: url("../img/place-for-toggle.svg");
+    top: 33px;
+    left: 118px;
+  }
+
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    width: 428px;
+    height: 6px;
+    background-image: url("../img/before-after-scale.svg");
+    top: 43px;
+    left: 83px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 16px;
+    left: 96px;
+  }
+}
+
+.example__toggle::after {
+  @media (max-width: $mobile-width-only) {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 6px;
+    background-image: url("../img/toggle.svg");
+    left: 38%;
+    bottom: 43px;
+  }
+
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/slider-control.svg");
+    left: 47%;
+    bottom: 30%;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: -17%;
+  }
+}
+
+.example__back {
+  width: 768px;
+  height: 462px;
 }

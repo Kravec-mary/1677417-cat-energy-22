@@ -21,6 +21,9 @@ sup {
 .test {
   @media (min-width: $desktop-width) {
     display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 525px;
   }
 }
 
@@ -30,6 +33,11 @@ input::placeholder {
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .logo-delete {

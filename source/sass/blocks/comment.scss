@@ -3,10 +3,24 @@
   display: flex;
   flex-direction: column;
   padding: 0;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
+  margin-left: 0;
+  margin-top: -4px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: -4px;
+    margin-top: 27px;
+  }
+
+
+  @media (min-width: $desktop-width) {
+    margin-left: -2px;
+    margin-top: 29px;
+  }
 }
 
 .comment__title {
+  position: relative;
   color: $basic-black;
   font-size: 24px;
   line-height: 26px;
@@ -19,6 +33,42 @@
   }
 }
 
+.comment__title::before {
+  content: "";
+  position: absolute;
+  top: 13px;
+  left: 142px;
+  width: 158px;
+  height: 2px;
+  background-color: #68b738;
+
+  @media (min-width: $tablet-width) {
+    width: 478px;
+    top: 31%;
+    left: 121%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1108px;
+  }
+}
+
+.comment__title::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    top: 32%;
+    right: 120%;
+    width: 30px;
+    height: 2px;
+    background-color: #68b738;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 70px;
+  }
+}
+
 .comment__textarea {
   width: 278px;
   height: 148px;
@@ -27,11 +77,17 @@
 
   @media (min-width: $tablet-width) {
     width: 631px;
-    height: 174px;
+    height: 172px;
+    padding-left: 8px;
+    margin-top: 40px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
+    width: 1213px;
     height: 174px;
   }
+}
+
+.comment__textarea::placeholder {
+  padding: 8px 13px;
 }

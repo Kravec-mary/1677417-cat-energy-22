@@ -1,30 +1,69 @@
 .choice-radio {
+  position: relative;
   color: $special-dark-grey;
   border: 0;
   width: 280px;
-  border-top: 1px solid $tangle-color;
-  border-bottom: 1px solid $tangle-color;
+  // border-top: 1px solid $tangle-color;
+  // border-bottom: 1px solid $tangle-color;
   padding: 0;
 
   @media (min-width: $tablet-width) {
-    width: 630px;
+    width: 586px;
+    height: 187px;
+    margin-top: 28px;
+    margin-left: -1px;
+    border: 1px solid #e7e7e7;
+    padding-left: 43px;
+    padding-top: 15px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 569px;
+    width: 526px;
+    padding-left: 41px;
+    margin-right: 111px;
+  }
+}
+
+.choice-radio::before {
+  @media (max-width: $mobile-width-only) {
+    content: "";
+    position: absolute;
+    left: -24px;
+    top: -8px;
+    width: 320px;
+    height: 1px;
+    background-color: $tangle-color;
+  }
+}
+
+.choice-radio::after {
+  @media (max-width: $mobile-width-only) {
+    content: "";
+    position: absolute;
+    left: -24px;
+    top: 149px;
+    width: 320px;
+    height: 1px;
+    background-color: $tangle-color;
   }
 }
 
 .choice-radio__list {
   list-style: none;
   padding-left: 0;
+  margin-top: 19px;
 }
 
 .choice-radio__item {
   padding-bottom: 25px;
-  padding-left: 60px;
-  font-size: 20px;
-  line-height: 30px;
+  padding-left: 44px;
+  font-size: 16px;
+  line-height: 18px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .choice-radio__item label {
@@ -35,24 +74,26 @@
 .choice-radio__input + label::before {
   content: "";
   position: absolute;
-  left: -59px;
-  top: -8px;
-  width: 30px;
-  height: 30px;
-  border: 2px solid $tangle-color-2;
+  left: -45px;
+  top: -5px;
+  width: 28px;
+  height: 28px;
+  border: 1px solid $tangle-color-2;
   border-radius: 50%;
 
   @media (min-width: $tablet-width) {
     width: 40px;
     height: 40px;
+    left: -60px;
+    top: -6px;
   }
 }
 
 .choice-radio__input:checked + label::after {
   content: "";
   position: absolute;
-  left: -48px;
-  top: 2px;
+  left: -36px;
+  top: 4px;
   width: 13px;
   height: 13px;
   background-color: $basic-green;
@@ -61,7 +102,7 @@
   @media (min-width: $tablet-width) {
     width: 18px;
     height: 18px;
-    left: -46px;
-    top: 4px;
+    left: -48px;
+    top: 7px;
   }
 }

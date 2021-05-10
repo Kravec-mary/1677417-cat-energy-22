@@ -1,19 +1,72 @@
 .more {
   border: 0;
   padding: 0;
+  margin-left: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 65px;
+    margin-left: -3px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 67px;
+    margin-left: -1px;
+  }
 }
 
 .more__title {
+  position: relative;
   font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   line-height: 26px;
   text-transform: none;
-  padding-bottom: 30px;
+  padding-bottom: 23px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 36px;
+    line-height: 36px;
+  }
+}
+
+.more__title::before {
+  content: "";
+  position: absolute;
+  top: 15px;
+  left: 164px;
+  width: 136px;
+  height: 2px;
+  background-color: #68b738;
+
+  @media (min-width: $tablet-width) {
+    width: 446px;
+    top: 35%;
+    left: 118%;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1078px;
+  }
+}
+
+.more__title::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    top: 35%;
+    right: 118%;
+    width: 30px;
+    height: 2px;
+    background-color: #68b738;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 70px;
+  }
 }
 
 .more__list {
   list-style: none;
-  padding-left: 60px;
+  padding-left: 46px;
   display: flex;
   flex-direction: column;
 
@@ -21,12 +74,15 @@
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 21px 13px;
+    grid-gap: 19px 63px;
+    margin-top: 37px;
+    padding-left: 61px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
-    height: 174px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 30px;
+    margin-bottom: 41px;
   }
 }
 
@@ -56,13 +112,15 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    font-size: 20px;
     width: 282px;
     height: 52px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 568px;
-    height: 54px;
+    width: 570px;
+    height: 52px;
+    padding-left: 9px;
   }
 }
 
@@ -73,6 +131,17 @@
   text-transform: none;
   text-align: center;
   padding-top: 20px;
+  padding-right: 46px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    padding-top: 17px;
+    padding-left: 64px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 83px;
+  }
 }
 
 .more__container {
@@ -83,6 +152,8 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-direction: row;
+    margin-top: 33px;
+    justify-content: flex-start;
   }
 
   @media (min-width: $desktop-width) {
@@ -99,7 +170,7 @@
 .more__checkbox + label::before {
   content: "";
   position: absolute;
-  left: -58px;
+  left: -47px;
   top: -6px;
   width: 30px;
   height: 30px;
@@ -108,14 +179,15 @@
   @media (min-width: $tablet-width) {
     width: 40px;
     height: 40px;
+    left: -60px;
   }
 }
 
 .more__checkbox:checked + label::after {
   content: "";
   position: absolute;
-  left: -51px;
-  top: 2px;
+  left: -40px;
+  top: 3px;
   width: 18px;
   height: 14px;
   background-image: url("../img/vector.svg");
@@ -123,6 +195,6 @@
 
   @media (min-width: $tablet-width) {
     left: -47px;
-    top: 7px;
+    top: 9px;
   }
 }

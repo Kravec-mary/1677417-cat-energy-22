@@ -200,13 +200,15 @@
 .additional__button {
   text-decoration: none;
   color: $basic-white;
+  font-size: 16px;
 
   @media (min-width: $tablet-width) {
     margin-top: 13px;
+    width: 632px;
   }
 
   @media (min-width: $desktop-width) {
     grid-column-start: 4;
-    width: 280px;
+    width: 248px;
   }
 }

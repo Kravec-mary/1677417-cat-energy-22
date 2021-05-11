@@ -1,10 +1,22 @@
 .contact-details {
   border: 0;
-  margin-top: 25px;
+  margin-top: 10px;
   padding: 0;
+  margin-left: 0;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 74px;
+    margin-left: -4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 31px;
+    margin-left: 0;
+  }
 }
 
 .contact-details__title {
+  position: relative;
   font-size: 24px;
   line-height: 26px;
   text-transform: none;
@@ -15,12 +27,53 @@
   }
 }
 
+.contact-details__title::before {
+  content: "";
+  position: absolute;
+  top: 16px;
+  left: 201px;
+  width: 99px;
+  height: 2px;
+  background-color: $basic-green;
+
+  @media (min-width: $tablet-width) {
+    top: 22px;
+    left: 555px;
+    width: 145px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 778px;
+  }
+}
+
+.contact-details__title::after {
+  @media (min-width: $tablet-width) {
+    content: "";
+    position: absolute;
+    top: 22px;
+    right: 108%;
+    width: 30px;
+    height: 2px;
+    background-color: $basic-green;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 70px;
+  }
+}
+
 .contact-details__list {
   list-style: none;
   padding-left: 0;
   color: $basic-dark-grey;
   display: flex;
   flex-direction: column;
+  margin-top: 38px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 77px;
+  }
 
   @media (min-width: $desktop-width) {
     display: flex;
@@ -31,16 +84,27 @@
 
 .contact-details__item {
   padding-bottom: 10px;
+
+  @media (min-width: $tablet-width) {
+    padding-bottom: 18px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .contact-details__item label {
   padding-right: 5px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 14px;
+  }
 }
 
 .contact-details__item input {
   height: 45px;
   padding: 0;
   border: 1px solid $grey-input;
+  padding-left: 15px;
 
   @media (min-width: $tablet-width) {
     height: 52px;
@@ -48,34 +112,38 @@
 }
 
 .contact-details__item:nth-child(1) input {
-  width: 214px;
+  width: 201px;
   background: url("../img/icon-email-mobile.svg") no-repeat;
-  background-position: 97% 46%;
+  background-position: 94% 42%;
 
   @media (min-width: $tablet-width) {
-    width: 551px;
+    width: 525px;
     background: url("../img/icon-email-tablet.svg") no-repeat;
     background-position: 97% 46%;
+    padding-left: 23px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 486px;
+    width: 464px;
+    background-position: 96% 43%;
   }
 }
 
 .contact-details__item:nth-child(2) input {
-  width: 197px;
+  width: 184px;
   background: url("../img/icon-phone-mobile.svg") no-repeat;
-  background-position: 97% 46%;
+  background-position: 95% 46%;
 
   @media (min-width: $tablet-width) {
-    width: 535px;
+    width: 511px;
     background: url("../img/icon-phone-tablet.svg") no-repeat;
     background-position: 97% 46%;
+    padding-left: 16px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 472px;
+    width: 450px;
+    margin-right: 110px;
   }
 }
 

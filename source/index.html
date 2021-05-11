@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <link rel="icon" href="img/favicon.ico">
   </head>
   <body class="page__body">
@@ -20,8 +20,8 @@
           <img class="logo-delete" src="img/cat-energy-logo-mobile.svg" width="101" height="18" alt="logo cat energy">
         </picture>
       </a>
-      <nav class="page-header__nav main-nav__wrapper">
-        <button class="page-header__toggle page-header__toggle--opened page-header__toggle--closed" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <nav class="page-header__nav main-nav__wrapper page-header--opened page-header--nojs page-header--main">
+        <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="page-header__wrapper">
           <ul class="page-header__list">
             <li class="page-header__item">
@@ -49,7 +49,7 @@
               <source type="image/webp" srcset="img/food-cat-energy-mobile.webp 1x, img/food-cat-energy-mobile@2x.webp 2x">
               <source media="(min-width: 1440px)" srcset="img/food-cat-energy-desktop.png 1x, img/food-cat-energy-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/food-cat-energy-tablet.png 1x, img/food-cat-energy-tablet@2x.png 2x">
-              <img class="choice-program__product" src="img/food-cat-energy-mobile.png" srcset="img/food-cat-energy-mobile@2x.png 2x" width="280" height="270" alt="cat energy pro with chicken">
+              <img class="choice-program__product" src="img/food-cat-energy-mobile.png" srcset="img/food-cat-energy-mobile@2x.png 2x" alt="cat energy pro with chicken">
             </picture>
           </div>
           <a class="choice-program__button button-base" href="form.html">Подобрать программу</a>
@@ -58,12 +58,20 @@
             <li class="choice-program__item">
               <h3 class="choice-program__headline">Похудение</h3>
               <p class="choice-program__subtitle">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-              <a class="choice-program__link" href="#">Каталог slim  &#10142;</a>
+              <a class="choice-program__link" href="catalog.html">Каталог slim
+                <svg width="32" height="12">
+                  <use xlink:href="img/sprite.svg#arrow"></use>
+                </svg>
+              </a>
             </li>
             <li class="choice-program__item">
               <h3 class="choice-program__headline">Набор массы</h3>
               <p class="choice-program__subtitle">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-              <a class="choice-program__link" href="#">Каталог pro  &#10142;</a>
+              <a class="choice-program__link" href="catalog.html">Каталог pro
+                <svg width="32" height="12">
+                  <use xlink:href="img/sprite.svg#arrow"></use>
+                </svg>
+              </a>
             </li>
           </ul>
       </section>
@@ -78,10 +86,10 @@
               <p>Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
             </li>
             <li class="advantages__item">
-              <p>Замените один-два приема обычно еды на наше функциональное питание.</p>
+              <p>Замените один-два приема обычной еды на наше функциональное питание.</p>
             </li>
             <li class="advantages__item">
-              <p>Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+              <p>Уже через месяц наслаждайтесь изменениями к лучшему &nbsp вашего питомца!</p>
             </li>
           </ul>
         </div>
@@ -105,8 +113,8 @@
           </div>
           <div class="example__box">
             <picture>
-              <source type="image/webp" media="(min-width: 1440px)" srcset="img/fat-cat-desktop.webp 1x, img/fat-cat-desktop@2x.webp 2x">
-              <source type="image/webp" media="(min-width: 768px)" srcset="img/fat-cat-tablet.webp 1x, img/fat-cat-tablet@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 1440px)" srcset="img/image-cat-desktop.webp 1x, img/image-cat-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/image-cat-tablet.webp 1x, img/image-cat-tablet@2x.webp 2x">
               <source type="image/webp" srcset="img/fat-cat-mobile.webp 1x, img/fat-cat-mobile@2x.webp 2x">
               <source media="(min-width: 1440px)" srcset="img/image-cat-desktop.png 1x, img/image-cat-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/image-cat-tablet.png 1x, img/image-cat-tablet@2x.png 2x">
@@ -114,6 +122,10 @@
             </picture>
             <div class="example__before-after-button">
               <button class="example__button" type="button">было</button>
+              <div>
+                <div class="example__toggle">
+                </div>
+              </div>
               <button class="example__button" type="button">стало</button>
             </div>
           </div>
@@ -125,7 +137,10 @@
         <div class="page-footer__contacts contacts">
           <div class="contacts__section">
             <p class="contacts__text">Приглашаем<br> к сотрудничеству<br> дилеров!</p>
-            <p class="contacts__address">ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург</p>
+            <span class="contacts__container">
+              <p class="contacts__address">ул. Большая<br> Конюшенная, д. 19/8<br></p>
+              <p class="contacts__address-city">Санкт-Петербург</p>
+            </span>
           </div>
           <div class="page-footer__map">
             <iframe class="page-footer__location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1618815844001!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -170,5 +185,6 @@
       </div>
       </div>
     </footer>
+    <script src="js/script.min.js"></script>
   </body>
 </html>

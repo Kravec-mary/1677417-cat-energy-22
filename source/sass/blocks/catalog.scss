@@ -4,7 +4,7 @@
   font-size: 12px;
   line-height: 16px;
   padding-left: 20px;
-  padding-right: 20px;
+  padding-bottom: 25px;
 
   @media (min-width: $tablet-width) {
     padding-left: 30px;
@@ -23,6 +23,16 @@
   font-size: 36px;
   line-height: 36px;
   color: $basic-black;
+
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    margin-top: 53px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 72px;
+  }
 }
 
 .catalog__list {
@@ -32,27 +42,61 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  align-content: center;
 
   @media (min-width: $tablet-width) {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-gap: 45px 50px;
+    grid-gap: 10px 26px;
+    align-items: baseline;
   }
 
   @media (min-width: $desktop-width) {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 60px 50px;
+    grid-gap: 12px 41px;
   }
 }
 
 .catalog__item {
+  position: relative;
   display: flex;
   flex-direction: row;
+  padding: 15px 0;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
+    padding-left: 35px;
+    width: calc(100% - 30px);
+    padding-bottom: 38px;
+    margin-top: 80px;
+    background: #f2f2f2;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    padding-left: 39px;
+  }
+}
+
+.catalog__item::before {
+  @media (max-width: $mobile-width-only) {
+    content: "";
+    position: absolute;
+    top: 7px;
+    right: 0;
+    width: 320px;
+    height: 1px;
+    background-color: $tangle-color-3;
+  }
+}
+
+.catalog__container {
+  @media (min-width: $tablet-width) {
+    padding-top: 31px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 39px;
   }
 }
 
@@ -68,15 +112,39 @@
 }
 
 .catalog__table {
-  padding-bottom: 30px;
+  padding-top: -2px;
+  padding-bottom: 19px;
+  line-height: 13px;
 
   @media (min-width: $tablet-width) {
-    // width: 252px;
+    font-size: 16px;
+    line-height: 27px;
   }
 
   @media (min-width: $desktop-width) {
-    // width: 180px;
+    padding-top: 6px;
   }
+}
+
+.catalog__row {
+  border-bottom: 1px solid red;
+}
+
+.catalog__table td:nth-child(1) {
+  padding-right: 44px;
+
+  @media (min-width: $tablet-width) {
+    padding-right: 143px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 60px;
+  }
+}
+
+.catalog__table td:nth-child(2) {
+  text-align: right;
+  width: 54px;
 }
 
 .catalog__heading {
@@ -87,45 +155,69 @@
   text-transform: uppercase;
   color: $special-dark-grey;
   width: 76px;
+  margin-top: 1px;
+  margin-bottom: 12px;
 
   @media (min-width: $tablet-width) {
-    width: 125px;
+    font-size: 20px;
+    line-height: 24px;
+    width: 130px;
     text-align: center;
+    padding-left: 63px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 22px;
+    line-height: 21px;
   }
 }
 
-// .catalog__link {
-//   font-size: 20px;
-//   line-height: 20px;
-//   text-align: center;
-//   font-family: "Oswald", "Arial", sans-serif;
-//   width: 244px;
-//   height: 40px;
-//   background-color: $basic-green;
-//   padding-top: 14px;
-//   text-transform: uppercase;
-//   text-decoration: none;
-//   color: $basic-white;
-//   margin-left: 20px;
-
-//   @media (max-width: $mobile-width-only) {
-//     font-size: 14px;
-//     line-height: 18px;
-//     width: 264px;
-//     height: 30px;
-//     padding-top: 10px;
-//   }
-// }
-
 .catalog__more {
-  padding-top: 50px;
+  position: relative;
+  padding-top: 33px;
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  padding-right: 14px;
 
   @media (min-width: $tablet-width) {
-    margin-top: 100px;
+    border: 1px solid $basic-grey;
+    width: 324px;
+    height: 403px;
+    padding-right: 0;
+    padding-top: 19px;
+    padding-bottom: 5px;
+    gap: 10px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    gap: 20px;
+  }
+}
+
+.catalog__more::before {
+  @media (max-width: $mobile-width-only) {
+    content: "";
+    position: absolute;
+    top: 7px;
+    right: 0;
+    width: 320px;
+    height: 1px;
+    background-color: $tangle-color-3;
+  }
+}
+
+.catalog__more::after {
+  @media (max-width: $mobile-width-only) {
+    content: "";
+    position: absolute;
+    top: 112%;
+    right: 0;
+    width: 320px;
+    height: 1px;
+    background-color: $tangle-color-3;
   }
 }
 
@@ -135,30 +227,98 @@
 
 .catalog__more .catalog__button {
   background-color: $basic-grey;
-  margin-top: 72px;
   width: 280px;
+  margin-top: 8px;
 
-  @media (max-width: 767px) {
+  @media (max-width: $mobile-width-only) {
     margin-left: 0;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 58px;
+    width: 247px;
+    font-size: 16px;
+    line-height: 20px;
+    padding-right: 1px;
+    padding-top: 11px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 167px;
+    padding-top: 9px;
+    height: 31px;
+    margin-top: 53px;
   }
 }
 
 .catalog__more .catalog__heading {
   @media (max-width: $mobile-width-only) {
     width: 208px;
+    margin-bottom: -4px;
+    margin-top: 19px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 140px;
+    padding-left: 0;
+    padding-top: 18px;
+    margin-bottom: 0;
+  }
+}
+
+.catalog__more p {
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    line-height: 18px;
+    width: 167px;
+    text-align: center;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 6px;
   }
 }
 
 .catalog__button {
   text-align: center;
   width: 280px;
+  font-size: 16px;
 
   @media (max-width: $mobile-width-only) {
-    margin-left: -133px;
+    margin-left: -140px;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-top: 14px;
+    width: 253px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 167px;
   }
 }
 
 .catalog__link {
   text-decoration: none;
   color: $basic-white;
+}
+
+.catalog__image {
+  @media (min-width: $tablet-width) {
+    padding-left: 42px;
+    margin-top: -80px;
+  }
+
+  @media (min-width: $desktop-width) {
+    min-height: 208px;
+    padding-left: 0;
+  }
+}
+
+.catalog__plus svg {
+  @media (min-width: $tablet-width) {
+    height: 60px;
+    width: 60px;
+    padding-bottom: 9px;
+  }
 }

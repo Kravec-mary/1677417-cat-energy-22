@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Кэт энерджи</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <link rel="icon" href="img/favicon.ico">
   </head>
   <body class="page__body">
@@ -20,8 +20,8 @@
           <img class="logo-delete" src="img/cat-energy-logo-mobile.svg" width="101" height="18" alt="logo cat energy">
         </picture>
       </a>
-      <nav class="page-header__nav main-nav__wrapper">
-        <button class="page-header__toggle page-header__toggle--opened page-header__toggle--closed" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <nav class="page-header__nav main-nav__wrapper page-header--opened page-header--nojs">
+        <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="page-header__wrapper">
           <ul class="page-header__list">
             <li class="page-header__item">
@@ -46,6 +46,7 @@
             <div class="catalog__image">
               <picture>
                 <source type="image/webp" media="(min-width: 1440px)" srcset="img/chicken-500-desktop.webp 1x, img/chicken-500-desktop@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-500-tablet.webp 1x, img/chicken-500-tablet@2x.webp 2x">
                 <source type="image/webp" srcset="img/chicken-500-mobile.webp 1x, img/chicken-500-mobile@2x.webp 2x">
                 <source media="(min-width: 1440px)" srcset="img/chicken-500-desktop.png 1x, img/chicken-500-desktop@2x.png 2x">
                 <source media="(min-width: 768px)" srcset="img/chicken-500-tablet.png 1x, img/chicken-500-tablet@2x.png 2x">
@@ -180,7 +181,7 @@
               <div class="catalog__desc">
               <h4 class="catalog__heading">Cat energy slim 500 г</h4>
               <table class="catalog__table">
-              <tr class="catalog__row">
+              <tr>
                 <td>Масса</td>
                 <td>500 г</td>
               </tr>
@@ -262,11 +263,13 @@
             </div>
           </li>
           <li class="catalog__more item">
-            <div class="catalog__image">
-              <img src="img/plus.svg" alt="Плюсик">
+            <div class="catalog__plus">
+              <svg width="30" height="30">
+                <use xlink:href="img/sprite.svg#plus"></use>
+              </svg>
             </div>
             <h4 class="catalog__heading">Показать еще 100500 товаров</h4>
-            <p>На самом деле вкусов гораздно больше!</p>
+            <p>На самом деле вкусов гораздо больше!</p>
             <div class="catalog__button button-base">
               <a class="catalog__link link-base" href="form.html">Показать всё</a>
             </div>
@@ -362,9 +365,12 @@
       <footer class="page-footer">
         <div class="page-footer__wrapper">
           <div class="page-footer__contacts contacts">
-            <div class="contacts__section">
+            <div class="contacts__section contacts__section--form">
               <p class="contacts__text">Приглашаем<br> к сотрудничеству<br> дилеров!</p>
-              <p class="contacts__address">ул. Большая<br> Конюшенная, д. 19/8<br> Санкт-Петербург</p>
+              <span class="contacts__container">
+                <p class="contacts__address">ул. Большая<br> Конюшенная, д. 19/8<br></p>
+                <p class="contacts__address-city">Санкт-Петербург</p>
+              </span>
             </div>
             <div class="page-footer__map">
               <iframe class="page-footer__location" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6037872533277!2d30.320858716096975!3d59.93871648187614!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1618815844001!5m2!1sru!2sru" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
@@ -409,5 +415,6 @@
         </div>
         </div>
       </footer>
+      <script src="js/script.min.js"></script>
   </body>
 </html>

@@ -6,9 +6,10 @@
   color: $basic-white;
   height: 310px;
   background-image: url("../img/gift-mobile.png");
-  background-size: cover;
+  background-size: 280px 289px;
   background-repeat: no-repeat;
   margin: 0 20px;
+  padding-bottom: 12px;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/gift-mobile@2x.png");
@@ -16,9 +17,11 @@
 
   @media (min-width: $tablet-width) {
     background-image: url("../img/gift-tablet.png");
-    padding: 0 30px;
+    background-size: 708px 200px;
     text-align: center;
-    margin-top: 40px;
+    margin-top: 14px;
+    margin-left: 29px;
+    height: 233px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/gift-tablet@2x.png");
@@ -27,10 +30,49 @@
 
   @media (min-width: $desktop-width) {
     background-image: url("../img/gift-desktop.png");
-    background-size: 100% auto;
+    background-size: 245px auto;
+    height: 440px;
+    width: 310px;
+    margin-top: 148px;
+    margin-left: 33px;
 
     @media (min-resolution: 2dppx) {
       background-image: url("../img/gift-desktop@2x.png");
     }
+  }
+}
+
+.action__wrapper {
+  position: relative;
+  height: 280px;
+  background-image: url("../img/icon-gift.svg");
+  background-position: 50% 29%;
+  background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    background-position: 12% 28%;
+  }
+
+  @media (min-width: $desktop-width) {
+    background-position: 36% 29%;
+  }
+}
+
+.action__text {
+  position: absolute;
+  bottom: 12%;
+  left: 21%;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    bottom: 53%;
+    left: 59%;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    bottom: 11%;
+    left: 13%;
+    text-align: center;
   }
 }

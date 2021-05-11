@@ -5,7 +5,6 @@
   line-height: 16px;
   padding-left: 20px;
   padding-bottom: 25px;
-  // padding-right: 20px;
 
   @media (min-width: $tablet-width) {
     padding-left: 30px;
@@ -43,7 +42,6 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  // align-content: center;
 
   @media (min-width: $tablet-width) {
     display: grid;
@@ -63,15 +61,14 @@
   position: relative;
   display: flex;
   flex-direction: row;
-  padding-top: 27px;
-  margin-bottom: 15px;
+  padding: 15px 0;
 
   @media (min-width: $tablet-width) {
     flex-direction: column;
-    padding-top: 32px;
     padding-left: 35px;
-    width: 324px;
-    height: 511px;
+    width: calc(100% - 30px);
+    padding-bottom: 38px;
+    margin-top: 80px;
     background: #f2f2f2;
   }
 
@@ -91,16 +88,6 @@
     height: 1px;
     background-color: $tangle-color-3;
   }
-  // @media (min-width: $tablet-width) {
-  //   content: "";
-  //   position: absolute;
-  //   top: 21%;
-  //   left: 0%;
-  //   width: 324px;
-  //   height: 430px;
-  //   background-color: rgba(242, 242, 242, 1);
-  //   opacity: 0.5;
-  // }
 }
 
 .catalog__container {
@@ -128,16 +115,13 @@
   padding-top: -2px;
   padding-bottom: 19px;
   line-height: 13px;
-  // position: relative;
 
   @media (min-width: $tablet-width) {
     font-size: 16px;
     line-height: 27px;
-    // width: 252px;
   }
 
   @media (min-width: $desktop-width) {
-    // width: 180px;
     padding-top: 6px;
   }
 }
@@ -145,15 +129,6 @@
 .catalog__row {
   border-bottom: 1px solid red;
 }
-// .catalog__row::before {
-//   content: "";
-//   position: absolute;
-//   top: 28%;
-//   left: 1%;
-//   width: 250px;
-//   height: 1px;
-//   background-color: $tangle-color-2;
-// }
 
 .catalog__table td:nth-child(1) {
   padding-right: 44px;
@@ -197,29 +172,6 @@
   }
 }
 
-// .catalog__link {
-//   font-size: 20px;
-//   line-height: 20px;
-//   text-align: center;
-//   font-family: "Oswald", "Arial", sans-serif;
-//   width: 244px;
-//   height: 40px;
-//   background-color: $basic-green;
-//   padding-top: 14px;
-//   text-transform: uppercase;
-//   text-decoration: none;
-//   color: $basic-white;
-//   margin-left: 20px;
-
-//   @media (max-width: $mobile-width-only) {
-//     font-size: 14px;
-//     line-height: 18px;
-//     width: 264px;
-//     height: 30px;
-//     padding-top: 10px;
-//   }
-// }
-
 .catalog__more {
   position: relative;
   padding-top: 33px;
@@ -237,7 +189,6 @@
     padding-top: 19px;
     padding-bottom: 5px;
     gap: 10px;
-    // margin-top: 100px;
   }
 
   @media (min-width: $desktop-width) {
@@ -355,9 +306,11 @@
 .catalog__image {
   @media (min-width: $tablet-width) {
     padding-left: 42px;
+    margin-top: -80px;
   }
 
   @media (min-width: $desktop-width) {
+    min-height: 208px;
     padding-left: 0;
   }
 }

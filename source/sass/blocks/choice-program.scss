@@ -237,6 +237,9 @@
     padding-left: 52px;
   }
 }
+//.choice-program__link svg{
+//   animation:
+//}
 
 .choice-program__product {
   @media (min-width: $tablet-width) {
@@ -270,4 +273,12 @@
     left: 11.8%;
     height: 38px;
   }
+}
+
+.choice-program__button:hover {
+  background-color: $basic-green-hover;
+}
+
+.choice-program__button:active {
+  color: rgba(255, 255, 255, 0.3);
 }

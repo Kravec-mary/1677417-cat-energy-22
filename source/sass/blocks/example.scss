@@ -237,6 +237,18 @@
   }
 }
 
+.example__button:hover {
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  }
+}
+
+.example__button:active {
+  @media (min-width: $tablet-width) {
+    border: 0;
+  }
+}
+
 .example__before-after-button {
   position: relative;
   width: 320px;
@@ -328,6 +340,22 @@
     bottom: -17%;
   }
 }
+
+// .example__toggle::after:hover {
+//   @media (min-width: $tablet-width) {
+//     background-image: url("../img/slider-control-hover.svg");
+//     left: 47%;
+//     bottom: 30%;
+//   }
+// }
+
+// .example__toggle::after:active {
+//   @media (min-width: $tablet-width) {
+//     background-image: url("../img/slider-control-pressed.svg");
+//     left: 47%;
+//     bottom: 30%;
+//   }
+// }
 
 .example__back {
   width: 768px;

@@ -52,6 +52,14 @@
   }
 }
 
+.questionary__item input:hover {
+  border-color: $tangle-color-2;
+}
+
+.questionary__item input:focus {
+  border-color: $basic-dark-grey;
+}
+
 .questionary__item:nth-child(1) input {
   width: 213px;
   padding-left: 13px;

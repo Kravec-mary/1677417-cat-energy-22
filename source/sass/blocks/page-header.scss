@@ -162,8 +162,10 @@
 .page-header__logo-image {
   text-decoration: none;
   display: grid;
-  grid-template-columns: 23% 54%;
+  //grid-template-columns: 23% 54%;
+  grid-template-columns: 37% 84%;
   margin-top: 24px;
+  width: 63%;
 }
 
 .page-header__logotype {
@@ -206,6 +208,12 @@
     padding-bottom: 9px;
     border-top: 1px solid $tangle-color-3;
     padding-top: 21px;
+  }
+}
+
+.page-header__item:nth-child(3) {
+  @media (max-width: $mobile-width-only) {
+    border-bottom: 1px solid $tangle-color-3;
   }
 }
 

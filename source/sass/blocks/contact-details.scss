@@ -111,6 +111,14 @@
   }
 }
 
+.contact-details__item input:hover {
+  border-color: $tangle-color-2;
+}
+
+.contact-details__item input:focus {
+  border-color: $basic-dark-grey;
+}
+
 .contact-details__item:nth-child(1) input {
   width: 201px;
   background: url("../img/icon-email-mobile.svg") no-repeat;

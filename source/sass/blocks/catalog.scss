@@ -116,7 +116,6 @@
 }
 
 .catalog__table {
-  padding-top: -2px;
   padding-bottom: 19px;
   line-height: 13px;
 
@@ -254,6 +253,14 @@
     height: 31px;
     margin-top: 53px;
   }
+}
+
+.catalog__more .catalog__button:hover {
+  background-color: $grey-color;
+}
+
+.catalog__more .catalog__link:active {
+  color: rgba(68, 68, 68, 0.3)
 }
 
 .catalog__more .catalog__heading {

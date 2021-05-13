@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.min.css" rel="stylesheet">
     <link rel="icon" href="img/favicon.ico">
+    <link rel="preload" href="fonts/oswaldmedium.woff" type="font/woff" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" type="font/woff2" as="font">
+    <link rel="preload" href="fonts/oswaldregular.woff" type="font/woff" as="font">
+    <link rel="preload" href="fonts/oswaldregular.woff2" type="font/woff2" as="font">
   </head>
   <body class="page__body">
 
@@ -21,7 +25,7 @@
         </picture>
       </a>
       <nav class="page-header__nav main-nav__wrapper page-header--opened page-header--nojs page-header--main">
-        <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="page-header__toggle" type="button" aria-label="Кнопка открытия и закрытия главного меню"><span class="visually-hidden">Открыть меню</span></button>
         <div class="page-header__wrapper">
           <ul class="page-header__list">
             <li class="page-header__item">
@@ -58,7 +62,7 @@
             <li class="choice-program__item">
               <h3 class="choice-program__headline">Похудение</h3>
               <p class="choice-program__subtitle">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-              <a class="choice-program__link" href="catalog.html">Каталог slim
+              <a class="choice-program__link" href="catalog.html" aria-label="Переход в каталог slim">Каталог slim
                 <svg width="32" height="12">
                   <use xlink:href="img/sprite.svg#arrow"></use>
                 </svg>
@@ -67,7 +71,7 @@
             <li class="choice-program__item">
               <h3 class="choice-program__headline">Набор массы</h3>
               <p class="choice-program__subtitle">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-              <a class="choice-program__link" href="catalog.html">Каталог pro
+              <a class="choice-program__link" href="catalog.html" aria-label="Переход в каталог pro">Каталог pro
                 <svg width="32" height="12">
                   <use xlink:href="img/sprite.svg#arrow"></use>
                 </svg>
@@ -118,15 +122,15 @@
               <source type="image/webp" srcset="img/fat-cat-mobile.webp 1x, img/fat-cat-mobile@2x.webp 2x">
               <source media="(min-width: 1440px)" srcset="img/image-cat-desktop.png 1x, img/image-cat-desktop@2x.png 2x">
               <source media="(min-width: 768px)" srcset="img/image-cat-tablet.png 1x, img/image-cat-tablet@2x.png 2x">
-              <img class="example__image" src="img/fat-cat-mobile.png" srcset="img/fat-cat-mobile@2x.png 2x" alt="fat cat">
+              <img class="example__image" src="img/fat-cat-mobile.png" srcset="img/fat-cat-mobile@2x.png 2x" alt="Изображение кота на примере было и стало">
             </picture>
             <div class="example__before-after-button">
-              <button class="example__button" type="button">было</button>
+              <button class="example__button" type="button" aria-label="Пример какой был кот до приема cat energy">было</button>
               <div>
                 <div class="example__toggle">
                 </div>
               </div>
-              <button class="example__button" type="button">стало</button>
+              <button class="example__button" type="button" aria-label="Пример какой cтал кот после приема cat energy">стало</button>
             </div>
           </div>
         </div>
@@ -153,21 +157,21 @@
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link" href="#">
+              <a class="social__link" href="#" aria-label="Ссылка на страницу вконтакте">
                 <svg class="social__icon" width="23" height="16">
                   <use xlink:href="img/sprite.svg#icon-vkontakte"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="#">
+              <a class="social__link" href="#" aria-label="Ссылка на страницу инстаграм">
                 <svg class="social__icon" width="16" height="16">
                   <use xlink:href="img/sprite.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="#">
+              <a class="social__link" href="#" aria-label="Ссылка на страницу фейсбук">
                 <svg class="social__icon" width="22" height="22">
                   <use xlink:href="img/sprite.svg#icon-facebook"></use>
                 </svg>
@@ -175,7 +179,7 @@
             </li>
           </ul>
         </div>
-        <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип Html academy">
           <span class="page-footer__partner">HTML Academy
             <svg class="page-footer__partner-logo" width="27" height="34">
               <use xlink:href="img/sprite.svg#html-academy"></use>

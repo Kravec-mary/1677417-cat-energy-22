@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.min.css" rel="stylesheet">
     <link rel="icon" href="img/favicon.ico">
+    <link rel="preload" href="fonts/oswaldmedium.woff" type="font/woff" as="font">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" type="font/woff2" as="font">
+    <link rel="preload" href="fonts/oswaldregular.woff" type="font/woff" as="font">
+    <link rel="preload" href="fonts/oswaldregular.woff2" type="font/woff2" as="font">
   </head>
   <body class="page__body">
 
@@ -21,7 +25,7 @@
         </picture>
       </a>
       <nav class="page-header__nav main-nav__wrapper page-header--opened page-header--nojs">
-        <button class="page-header__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <button class="page-header__toggle" type="button" aria-label="Кнопка открытия и закрытия главного меню"><span class="visually-hidden">Открыть меню</span></button>
         <div class="page-header__wrapper">
           <ul class="page-header__list">
             <li class="page-header__item">
@@ -47,16 +51,16 @@
             <fieldset class="questionary">
             <ul class="questionary__list">
               <li class="questionary__item">
-                <label for="name">Имя:<sup>*</sup></label>
-                <input type="text" id="name" placeholder="Барсик" name="имя" required>
+                <label for="name">Имя:<sup class="detail">*</sup></label>
+                <input type="text" id="name" placeholder="Барсик" name="имя" aria-label="Обязательное поле введения имени" required>
               </li>
               <li class="questionary__item">
-                <label for="weight">Вес (кг):<sup>*</sup></label>
-                <input type="number" id="weight" placeholder="7" name="вес" required>
+                <label for="weight">Вес (кг):<sup class="detail">*</sup></label>
+                <input type="number" id="weight" placeholder="7" name="вес" aria-label="Обязательное поле введения веса" required>
               </li>
               <li class="questionary__item">
                 <label for="age">Возраст (лет):</label>
-                <input type="number" id="age" placeholder="7" name="возраст">
+                <input type="number" id="age" placeholder="7" name="возраст" aria-label="Поле введения возраста">
               </li>
             </ul>
           </fieldset>
@@ -81,18 +85,18 @@
               <legend class="contact-details__title">Контактные данные (владельца кота)</legend>
                   <ul class="contact-details__list">
                     <li class="contact-details__item">
-                      <label for="email">E-mail:<sup>*</sup></label>
-                      <input type="email" id="email" placeholder="kuklachev@gmail.com" required>
+                      <label for="email">E-mail:<sup class="detail">*</sup></label>
+                      <input type="email" id="email" placeholder="kuklachev@gmail.com" aria-label="Обязательное поле введения почты" required>
                     </li>
                     <li class="contact-details__item">
-                      <label for="phone">Телефон:<sup>*</sup></label>
-                      <input type="tel" id="phone" placeholder="8 (960) 900-60-90" required>
+                      <label for="phone">Телефон:<sup class="detail">*</sup></label>
+                      <input type="tel" id="phone" placeholder="8 (960) 900-60-90" aria-label="Обязательное поле введения контактного телефона" required>
                     </li>
                   </ul>
             </fieldset>
             <fieldset class="comment">
               <legend class="comment__title">Комментарий</legend>
-              <textarea class="comment__textarea" placeholder="Расскажите обо всех повадках кота"></textarea>
+              <textarea class="comment__textarea" placeholder="Расскажите обо всех повадках кота" aria-label="Поле для информации о повадках вашего кота"></textarea>
             </fieldset>
             <fieldset class="more">
               <legend class="more__title">Дополнительно</legend>
@@ -116,7 +120,7 @@
               </ul>
               <div class="more__container">
                 <button class="more__button" type="button">Отправить заявку</button>
-                <span class="more__text"><sup>*</sup> &mdash; Oбязательные поля</span>
+                <span class="more__text"><sup class="detail">*</sup> &mdash; Oбязательные поля</span>
               </div>
             </fieldset>
         </form>
@@ -144,21 +148,21 @@
         <div class="page-footer__social social">
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__link" href="#">
+              <a class="social__link" href="#" aria-label="Ссылка на страницу вконтакте">
                 <svg class="social__icon" width="23" height="16">
                   <use xlink:href="img/sprite.svg#icon-vkontakte"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="#">
+              <a class="social__link" href="#" aria-label="Ссылка на страницу инстаграм">
                 <svg class="social__icon" width="16" height="16">
                   <use xlink:href="img/sprite.svg#icon-instagram"></use>
                 </svg>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__link" href="#">
+              <a class="social__link" href="#" aria-label="Ссылка на страницу фейсбук">
                 <svg class="social__icon" width="22" height="22">
                   <use xlink:href="img/sprite.svg#icon-facebook"></use>
                 </svg>
@@ -166,7 +170,7 @@
             </li>
           </ul>
         </div>
-        <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive">
+        <a class="page-footer__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Логотип Html academy">
           <span class="page-footer__partner">HTML Academy
             <svg class="page-footer__partner-logo" width="27" height="34">
               <use xlink:href="img/sprite.svg#html-academy"></use>

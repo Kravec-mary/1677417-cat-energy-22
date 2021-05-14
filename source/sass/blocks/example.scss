@@ -237,6 +237,18 @@
   }
 }
 
+.example__button:hover {
+  @media (min-width: $tablet-width) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+  }
+}
+
+.example__button:active {
+  @media (min-width: $tablet-width) {
+    border: 0;
+  }
+}
+
 .example__before-after-button {
   position: relative;
   width: 320px;

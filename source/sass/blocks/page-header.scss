@@ -143,6 +143,15 @@
   display: none;
 }
 
+.page-header--nojs .page-header__wrapper {
+  position: static;
+  min-height: 0;
+}
+
+.page-header--nojs .page-header__item {
+  display: block;
+}
+
 @media (min-width: $tablet-width) {
   .page-header {
     font-weight: 400;

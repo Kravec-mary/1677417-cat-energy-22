@@ -143,15 +143,6 @@
   display: none;
 }
 
-.page-header--nojs .page-header__wrapper {
-  position: static;
-  min-height: 0;
-}
-
-.page-header--nojs .page-header__item {
-  display: block;
-}
-
 @media (min-width: $tablet-width) {
   .page-header {
     font-weight: 400;
@@ -171,6 +162,7 @@
 .page-header__logo-image {
   text-decoration: none;
   display: grid;
+  //grid-template-columns: 23% 54%;
   grid-template-columns: 37% 84%;
   margin-top: 24px;
   width: 63%;
